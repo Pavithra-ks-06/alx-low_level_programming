@@ -1,37 +1,25 @@
 #include <stdio.h>
 
-
-
 /**
-
-   * main - print alphabet in upper and lower
-
-   *
-
-   * Return: zero
-
-   */
+* main - Prints alphabets in lowercase, then in uppercase
+* Return: 0
+**/
 
 int main(void)
-
 {
+	char l_letter;
+	char u_letter;
 
-char ch;
+	for (l_letter = 97; l_letter <= 122; l_letter++)
+	{
+		putchar(l_letter);
+	}
 
-char CH;
+	for (u_letter = 'A'; u_letter <= 'Z'; u_letter++)
+	{
+		putchar(u_letter);
+	}
+	putchar('\n');
 
-
-
-for (ch = a; ch <= z; ch++)
-
-putchar(ch);
-
-for (CH = A; CH <= Z; CH++)
-
-putchar(CH);
-
-putchar(n);
-
-return (0);
-
+	return (0);
 }
